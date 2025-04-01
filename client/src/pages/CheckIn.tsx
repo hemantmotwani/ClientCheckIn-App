@@ -1,22 +1,27 @@
-import { useState } from 'react'
+import React, { useState } from 'react'
 import {
-  Box,
-  Button,
-  Container,
+  VStack,
   Heading,
   Input,
-  VStack,
+  Button,
   Text,
-  useToast,
-  Card,
-  CardBody,
   Grid,
   GridItem,
+  useToast,
+  Spinner,
+  Card,
+  CardBody,
+  CardHeader,
+  CardFooter,
   Divider,
   HStack,
-  Spinner,
+  Icon,
+  InputGroup,
+  InputRightElement,
 } from '@chakra-ui/react'
+import { FaBarcode, FaSearch, FaCheck } from 'react-icons/fa'
 import { Client } from '../types/client'
+import { useNavigate } from 'react-router-dom'
 
 export default function CheckIn() {
   const [barcode, setBarcode] = useState('')
