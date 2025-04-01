@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import {
   VStack,
   Heading,
@@ -11,17 +11,11 @@ import {
   Spinner,
   Card,
   CardBody,
-  CardHeader,
-  CardFooter,
   Divider,
   HStack,
-  Icon,
-  InputGroup,
-  InputRightElement,
+  Container,
 } from '@chakra-ui/react'
-import { FaBarcode, FaSearch, FaCheck } from 'react-icons/fa'
 import { Client } from '../types/client'
-import { useNavigate } from 'react-router-dom'
 
 export default function CheckIn() {
   const [barcode, setBarcode] = useState('')
