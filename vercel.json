@@ -3,7 +3,7 @@
   "buildCommand": "npm run build",
   "installCommand": "npm install",
   "framework": "vite",
-  "outputDirectory": "dist",
+  "outputDirectory": "client/dist",
   "builds": [
     {
       "src": "server/src/index.ts",
@@ -17,7 +17,7 @@
     },
     {
       "src": "/(.*)",
-      "dest": "client/$1"
+      "dest": "client/dist/$1"
     }
   ]
 } 
