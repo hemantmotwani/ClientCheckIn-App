@@ -8,7 +8,7 @@ import clientRoutes from './routes/clientRoutes';
 
 const app = express();
 const port = process.env.PORT || 3001;
-
+console.log("Client_url", process.env.CLIENT_URL);
 // CORS configuration
 app.use(cors({
   origin: [
